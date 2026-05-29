@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>She Can Foundation</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="/" class="nav-logo"> She Can</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/volunteer">Volunteer</a>
+                <a href="/contact" class = "nav-cta">Contact Us</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <section class="volunteer-hero">
+  <h1>
+    Become A <span>Volunteer</span>
+  </h1>
+
+  <p>
+    Join our mission and contribute towards creating meaningful change.
+  </p>
+</section>
+       <section class="section">
+        <div class="vol-form-wrap reveal">
+            <h2>Volunteer Application</h2>
+            <form id="volunteerForm">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="vName" placeholder="Enter your name">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="vEmail" placeholder="Enter your Email ID">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label>Phone no.</label>
+                    <input type="text" id="vPhone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label>Area of Interest</label>
+                    <select id="vInterest">
+                        <option value="">Select</option>
+                        <option value="Education">Education</option>
+                        <option value="Community Support">Community Support</option>
+                        <option value="Events">Events</option>
+                    </select>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="form-group">
+                    <label>Why do you want to volunteer?</label>
+                    <textarea id="vBio" placeholder="Write a short message"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Application</button>
+                <div id="volToast" class="form-toast"></div>
+            </form>
+        </div>
+       </section>
+       <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2026 She Can Foundation. All rights Reserved. </p>
+            </div>
+        </footer>
+        <script src="{{url_for('static',filename='js/main.js')}}"></script>
+    </body>
+</html>

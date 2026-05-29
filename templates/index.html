@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>She Can Foundation</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="/" class="nav-logo"> She Can</a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/volunteer">Volunteer</a>
+                <a href="/contact" class = "nav-cta">Contact Us</a>
+            </div>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content reveal">
+                <div class="hero-badge">Empowering Communities</div>
+                <h1>Together we can<span><br>Change the world</span></h1>
+                <p>We don't ask for much, just help us with what you can- Be it Money, Skill or Your Time</p>
+                <div class="hero-btns">
+                    <a href="/volunteer" class="btn-primary">Join Us</a>
+                    <a href="/about" class="btn-outline">Learn more</a>
+                </div>
+            </div>
+        </section>
+        <section class="stats-bar reveal">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="volunteers" data-fallback="120">0</div>
+                    <div class="stat-label">Volunteers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="projects" data-fallback="24">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="messages" data-fallback="350">0</div>
+                    <div class="stat-label">Messages</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="years" data-fallback="0">0</div>
+                    <div class="stat-label">Years</div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-header reveal">
+            <h2>About <span>Our Mission</span></h2>
+            <p>We work towards creating opportunities and empowering people.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrap reveal">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop" alt="Community" height="300px">
+                </div>
+                <div class="about-text reveal">
+                    <h2>Building a better <span>Future together</span></h2>
+                    <p>She Can Foundation supports communities through volunteer programs,
+                     educational initiatives, and outreach activities.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="icon">✓</div>
+                        <span>Community Programs</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">✓</div>
+                        <span>Volunteer Oppurtunities</span>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon">✓</div>
+                        <span>Educational Support</span>
+                    </div>
+                </div>
+            <a href="/volunteer" class="btn-primary">Become a Volunteer</a>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-bottom">
+                <p>&copy; 2026 She Can Foundation. All rights Reserved. </p>
+            </div>
+        </footer>
+        <script src="{{url_for('static',filename='js/main.js')}}"></script>
+    </body>
+</html>
